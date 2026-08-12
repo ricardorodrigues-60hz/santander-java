@@ -1,0 +1,66 @@
+# ==============================================================================
+# JAVA & COMPILAÇÃO
+# ==============================================================================
+# Arquivos de classe compilados
+*.class
+
+# Arquivos de log e logs de travamento da JVM (HotSpot)
+*.log
+hs_err_pid*
+replay_pid*
+
+# Arquivos específicos de BlueJ / Mobile Tools
+*.ctxt
+.mtj.tmp/
+
+# Arquivos de empacotamento (gerados no build)
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Ignora todos os arquivos .jar por padrão para evitar commitar dependências
+*.jar
+
+# ==============================================================================
+# GRADLE
+# ==============================================================================
+.gradle
+**/build/
+!**/src/**/build/
+
+# Cache de tarefas e configurações locais
+gradle-app.setting
+.gradletasknamecache
+
+# REGRA CRUCIAL: Abre uma exceção para o Gradle Wrapper funcionar no repositório
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# ==============================================================================
+# INTELLIJ IDEA (E OUTRAS IDEs)
+# ==============================================================================
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/shelf/
+.idea/dictionaries/
+*.iml
+out/
+
+# Eclipse (caso algum colega de equipe use)
+.project
+.classpath
+.settings/
+
+# ==============================================================================
+# SISTEMA OPERACIONAL
+# ==============================================================================
+.DS_Store
+Thumbs.db
+
+# --- INTELLIJ IDEA ---
+.idea/
+*.iml
+out/
