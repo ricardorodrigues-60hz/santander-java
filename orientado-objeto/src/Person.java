@@ -1,19 +1,31 @@
+import java.time.OffsetDateTime;
+
 public class Person {
 
-    private String name;
+    private final String name;
 
     private int age;
 
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
+    private int lastYearAgeInt = OffsetDateTime.now().getYear();
+
+    public Person(String name){
         this.name = name;
+        this.age = 1;
+    }
+
+    public String getName() {
+        return this.name;
     }
     public int getAge() {
-        return age;
+        return this.age;
     }
-    public void setAge(int age) {
-        this.age = age;
+
+
+    public void intAge() {
+        if (this.lastYearAgeInt >= OffsetDateTime.now().getYear()) return;
+
+        this.age += 1;
+        this.lastYearAgeInt = OffsetDateTime.now().getYear();
     }
+
 }
