@@ -27,13 +27,11 @@ replay_pid*
 # ==============================================================================
 # GRADLE
 # ==============================================================================
-.gradle
+.gradle/
+build/
 **/build/
-!**/src/**/build/
-
-# Cache de tarefas e configurações locais
-gradle-app.setting
 .gradletasknamecache
+gradle-app.setting
 
 # REGRA CRUCIAL: Abre uma exceção para o Gradle Wrapper funcionar no repositório
 !gradle-wrapper.jar
