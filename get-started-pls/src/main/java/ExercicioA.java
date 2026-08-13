@@ -31,7 +31,7 @@ public class ExercicioA {
     }
 
     static void exercicio4(int fatorial) {
-        int resultadoFatorial = fatorial;
+        int resultadoFatorial = 1;
         for (int i = fatorial; i <= 1; i--) {
             resultadoFatorial *= i;
             System.out.printf("Resultado Fatorial: %d", resultadoFatorial);
