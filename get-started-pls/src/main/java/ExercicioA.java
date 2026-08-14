@@ -31,17 +31,27 @@ public class ExercicioA {
     }
 
     static void exercicio4(int fatorial) {
-        int resultadoFatorial = 1;
-        for (int i = fatorial; i <= 1; i--) {
+        long resultadoFatorial = 1;
+        for (int i = 1; i <= fatorial; i++) {
+            long resultadoAnterior = resultadoFatorial;
             resultadoFatorial *= i;
-            System.out.printf("Resultado Fatorial: %d", resultadoFatorial);
+            System.out.printf("Passo %d: %d * %d = %d\n", i, resultadoAnterior, i, resultadoFatorial);
         }
+    }
+
+    static void exercicio5Fibonacci() {
+        int a =  0;
+        int b = 1;
+        for (int i = 1; i <= 100; i++) {
+            System.out.print(a + " ");
+        }
+
     }
 
     public static void main(String[] args) {
         //exercicio1();
         //exercicio2();
         //exercicio3();
-        exercicio4(10);
+        exercicio4(40);
     }
 }
